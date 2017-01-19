@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 19, 2016 1:27:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.usersmanagement.model.TblApplications" table="tbl_applications" schema="public" optimistic-lock="version">
+        <id name="applicationId" type="int">
+            <column name="application_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="applicationname" type="string">
+            <column name="applicationname" />
+        </property>
+        <set name="tblPermissionses" table="tbl_permissionsapplications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="application_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.usersmanagement.model.TblPermissions">
+                <column name="permission_id" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

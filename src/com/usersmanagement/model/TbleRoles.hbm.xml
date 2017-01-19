@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 19, 2016 1:27:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.usersmanagement.model.TbleRoles" table="tble_roles" schema="public" optimistic-lock="version">
+        <id name="roleId" type="int">
+            <column name="role_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="rolenames" type="string">
+            <column name="rolenames" />
+        </property>
+        <set name="tblPermissionses" table="tbl_rolespermissions" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="role_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.usersmanagement.model.TblPermissions">
+                <column name="permission_id" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="tblUserses" table="tbl_usersroles" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="role_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.usersmanagement.model.TblUsers">
+                <column name="users_id" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
