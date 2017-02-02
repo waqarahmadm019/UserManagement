@@ -7,6 +7,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>UserManagement Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  		<spring.version>4.3.4.RELEASE</spring.version>
+  </properties>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
@@ -19,25 +22,32 @@
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
-    <version>4.3.4.RELEASE</version>
+    <version>${spring.version}</version>
 </dependency>
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
-    <version>4.3.4.RELEASE</version>
+    <version>${spring.version}</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aop</artifactId>
+    <version>${spring.version}</version>
+</dependency>
+
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
-    <version>4.3.4.RELEASE</version>
+    <version>${spring.version}</version>
 </dependency>
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-tx</artifactId>
-    <version>4.3.4.RELEASE</version>
+    <version>${spring.version}</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/javax.transaction/jta -->
 <dependency>
@@ -113,6 +123,20 @@
     <version>5.2.5.Final</version>
     
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjrt</artifactId>
+    <version>1.7.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/aspectj/aspectjweaver -->
+<dependency>
+    <groupId>aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.5.4</version>
+</dependency>
+
 <!--     <dependency> -->
 <!--   <groupId>org.apache.maven.plugins</groupId> -->
 <!--   <artifactId>maven-war-plugin</artifactId> -->

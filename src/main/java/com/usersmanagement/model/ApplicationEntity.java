@@ -12,6 +12,10 @@ import javax.persistence.Id;
 @Entity(name = "tbl_applications")
 public class ApplicationEntity implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int applicationId;
 	private String applicationname;
 	

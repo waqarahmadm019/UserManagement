@@ -1,0 +1,436 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button,
+select,
+textarea { font-size: 11px }
+
+/* Draggable Rows Style  */
+.ui-grid-draggable-row {
+    height: 30px;
+}
+.ui-grid-draggable-row-over {
+    position: relative;
+    color: #aaa;
+}
+.ui-grid-draggable-row-over:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed #26a391;
+}
+.ui-grid-draggable-row-over--above:before {
+    top: 0;
+}
+.ui-grid-draggable-row-over--below:before {
+    bottom: 0;
+}
+.ui-grid-header-cell-wrapper {
+	background-color: #1D2939;
+	color: #fff;
+}
+.ui-grid-row:hover .ui-grid-cell {
+	background-color: #E6E6E6;
+}
+.ng-pristine .ng-valid .ng-touched {
+	background-color: #26a391;
+}
+.ui-grid {
+    clear: both;
+	margin-top: 10px;
+}
+/*.ui-grid-menu .ui-grid-menu-inner {*/
+    /*background: #F3F3F3 none repeat scroll 0 0;*/
+    /*border: 1px solid #D4D4D4;*/
+    /*position: relative;*/
+    /*white-space: nowrap;*/
+    /*border-radius: 0;*/
+    /*-webkit-box-shadow: -1px 7px 14px -4px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: -1px 7px 14px -4px rgba(0,0,0,0.5);*/
+    /*box-shadow: -1px 7px 14px -4px rgba(0,0,0,0.5);*/
+/*}*/
+/*.ui-grid-menu .ui-grid-menu-inner ul li button:hover,*/
+/*.ui-grid-menu .ui-grid-menu-inner ul li button:focus {*/
+    /*box-shadow: none;*/
+    /*background-color: #a5ffa8;*/
+/*}*/
+/*.ui-grid-menu .ui-grid-menu-inner ul li{*/
+	/*background-color: #fff;*/
+/*}*/
+/*.ui-grid-column-menu-button-last-col {*/
+    /*margin-right: 0;*/
+/*}*/
+/*.ui-grid-selection-row-header-buttons {*/
+    /*cursor: pointer;*/
+    /*opacity: 0.5;*/
+    /*border: 1px solid #000;*/
+    /*background-color: #fff;*/
+    /*color: #000;*/
+    /*margin-top: 2px;*/
+/*}*/
+/*.ui-grid-row .ui-grid-cell.ui-grid-row-header-cell {*/
+    /*background-color: transparent;*/
+/*}*/
+/*.ui-grid-selection-row-header-buttons.ui-grid-all-selected {*/
+    /*opacity: 1;*/
+    /*background-color: #DBDAD8;*/
+/*}*/
+.blue-btn{
+	background-color: #4f5e73;
+    color: #fff;
+    border: medium none;
+    padding: 5px 10px;
+    float: left;
+}
+.blue-btn:hover{
+	background-color: #0178ba;
+}
+.input-field {
+    border-radius: 0;
+    border: 1px solid #989898;
+    background-color: #E0E0E0;
+    height: 28px;
+    margin-left: 10px;
+    padding-left: 5px;
+    float: left;
+}
+.filter-options {
+    float: right;
+    margin-bottom: 10px;
+    height: 25px;
+}
+.drop-down {
+    -moz-appearance: none;
+    background: rgb(224, 224, 224) url("../images/arrow-black.png") no-repeat scroll 99px 49%;
+    width: 115px;
+    height: 28px;
+    border: 1px solid #989898;
+    margin-left: 10px;
+    float: left;
+}
+
+.input-field:focus, .filter-options select:focus {
+    border-color: #66AFE9;
+    outline: 0 none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+/*.ui-grid-menu .ui-grid-menu-inner ul li:last-child button {*/
+    /*background-image: url("../images/two.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 96% auto;*/
+    /*height: 113px;*/
+/*}*/
+.ui-grid-menu .ui-grid-menu-inner ul li button { outline: none }
+.ui-grid-menu .ui-grid-menu-inner ul li button:hover,
+.ui-grid-menu .ui-grid-menu-inner ul li button:focus {
+    background-color:transparent;
+    box-shadow: none;
+}
+.ui-grid-menu .ui-grid-menu-inner ul li button:hover {
+    color: #045cc0;
+    /*text-decoration: underline;*/
+}
+.export-btn {
+    background-color: transparent;
+    background-image: url("../images/export.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 16px;
+    border: medium none;
+    font-size: 0;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+}
+.cols-btn {
+    background-color: transparent;
+    background-image: url("../images/filter.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 16px;
+    border: medium none;
+    font-size: 0;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 10px;
+    float: left;
+    margin-top: 4px;
+    background-size: 90%;
+}
+.filter-btn{
+	background-color: #26a391;
+	border: none;
+    height: 28px;
+    width: 28px;
+    float: left;
+    color: #fff;
+}
+.footer { margin-top: 20px }
+
+.ui-grid-header-cell {
+    border-color: #4e5d72;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.ui-grid-column-menu-button {
+    width: 15px;
+    height: 100%;
+    line-height: 25px;
+    z-index: 999;
+}
+.ui-grid-header-cell .ui-grid-column-menu-button { opacity: 0.3 }
+.ui-grid-header-cell:hover .ui-grid-column-menu-button {
+    background-color: #4f5e73;
+    opacity: 1;
+}
+.ui-grid-selection-row-header-buttons {
+    background-color: #fff;
+    opacity: 1;
+    height: 14px;
+    width: 14px;
+    margin: 0 auto;
+    border: 1px solid #b3b6ba;
+    color: #000;
+}
+.ui-grid-selection-row-header-buttons:before {
+    opacity: 0;
+    margin: 0;
+    left: 0;
+    position: relative;
+    top: -1px;
+}
+.ui-grid-all-selected:before,
+.ui-grid-row-selected:before {
+    opacity: 1;
+}
+.ui-grid-column-menu-button-last-col { margin-right: 3px }
+.ui-grid-pager-panel {
+    background-color: #293e5d;
+    color: #fff;
+    position: relative;
+    height: 32px;
+    margin-top: -32px;
+}
+.ui-grid-pager-container {
+    float: right;
+    margin-right: 7px;
+}
+.ui-grid-pager-count-container {
+    margin-top: 4px;
+    min-width: 50px;
+}
+.ui-grid-pager-row-count-picker {
+    left: 10px;
+    position: absolute;
+    top: 3px;
+}
+.ui-grid-pager-row-count-picker select { float: right }
+.ui-grid-pager-control button { background-color:transparent }
+.ui-grid-pager-control .last-triangle {
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 5px 0 5px 8.7px;
+    height: 0;
+    margin-left: -1px;
+    width: 0;
+}
+.ui-grid-pager-control button {
+    -moz-user-select: none;
+    background-color: transparent;
+    background-image: none;
+    border: medium none;
+    border-radius: 4px;
+    color: #EEE;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    height: 25px;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    min-width: 26px;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.ui-grid-pager-control button:hover {
+    -moz-user-select: none;
+    background-color: transparent;
+    background-image: none;
+    border: none
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    height: 25px;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    min-width: 26px;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    opacity:0.5;
+}
+.ui-grid-pager-control button.disabled,
+.ui-grid-pager-control button[disabled],
+fieldset[disabled] .ui-grid-pager-control button,
+.ui-grid-pager-control button.disabled:hover,
+.ui-grid-pager-control button[disabled]:hover,
+fieldset[disabled] .ui-grid-pager-control button:hover,
+.ui-grid-pager-control button.disabled:focus,
+.ui-grid-pager-control button[disabled]:focus,
+fieldset[disabled] .ui-grid-pager-control button:focus,
+.ui-grid-pager-control button.disabled.focus,
+.ui-grid-pager-control button.focus[disabled],
+fieldset[disabled] .ui-grid-pager-control button.focus,
+.ui-grid-pager-control button.disabled:active,
+.ui-grid-pager-control button[disabled]:active,
+fieldset[disabled] .ui-grid-pager-control button:active,
+.ui-grid-pager-control button.disabled.active,
+.ui-grid-pager-control button.active[disabled],
+fieldset[disabled] .ui-grid-pager-control button.active { background-color:transparent }
+.ui-grid-pager-control input {
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 48px;
+    height: 21px;
+    padding: 1px 3px;
+    margin-top: 2px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 83, 110);
+}
+.ui-grid-pager-row-count-picker select {
+    background-image: none;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 48px;
+    height: 21px;
+    padding: 1px 3px;
+    margin-top: 2px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 83, 110);
+    position: relative;
+}
+/*.ui-grid-pager-row-count-picker select {*/
+    /*-moz-appearance: none;*/
+    /*background-position: 37px;*/
+/*}*/
+.ui-grid-pager-row-count-picker select:after {
+    content: '';
+    background-image: url("../images/arrow.png");
+    height: 5px;
+    width: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ui-grid-pager-row-count-picker .ui-grid-pager-row-count-label {
+    top: 6px;
+    position: relative;
+}
+.ui-grid-pager-control button:active, .ui-grid-pager-control button.active, .open > .dropdown-toggle.ui-grid-pager-control button {
+    color: #eee;
+    background-color: transparent;
+    border-color: transparent;
+}
+.ui-grid-pager-control button:active:hover, .ui-grid-pager-control button.active:hover, .open > .dropdown-toggle.ui-grid-pager-control button:hover, .ui-grid-pager-control button:active:focus, .ui-grid-pager-control button.active:focus, .open > .dropdown-toggle.ui-grid-pager-control button:focus, .ui-grid-pager-control button.focus:active, .ui-grid-pager-control button.active.focus, .open > .dropdown-toggle.ui-grid-pager-control button.focus {
+    color: #eee;
+    background-color: transparent;
+    border-color: transparent;
+}
+.ui-grid-pager-control .first-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 8.7px 5px 0;
+    border-color: transparent #FFF transparent transparent;
+    margin-left: 2px;
+}
+.ui-grid-pager-control .first-bar {
+    width: 10px;
+    border-left: 2px solid #FFF;
+    margin-top: -6px;
+    height: 12px;
+    margin-left: -3px;
+}
+.ui-grid-pager-control .last-bar {
+    width: 10px;
+    border-left: 2px solid #FFF;
+    margin-top: -6px;
+    height: 12px;
+    margin-left: 1px;
+}
+.ui-grid-pager-control button:focus,
+.ui-grid-pager-control button.focus {
+    color: #eee;
+    background-color: transparent;
+    border-color: #8c8c8c;
+}
+.sets-btn {
+    background-color: transparent;
+    background-image: url("../images/settings.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 16px;
+    border: medium none;
+    font-size: 0;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 10px;
+    float: left;
+    margin-top: 4px;
+    background-size: 90%;
+    opacity: 0;
+}
+.ui-grid-menu-button {
+    top: -40px;
+    background-color: transparent;
+    border: none;
+    height: auto;
+}
+.ui-grid-menu-button .ui-grid-icon-container { margin-top: 9px }
+.ui-grid-icon-menu {
+    background-image: url("../images/settings.png");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 18px;
+    display: block;
+    vertical-align: middle;
+    background-size: 90%;
+}
+.ui-grid-icon-menu:before { opacity: 0 }
+input {
+    font-weight:normal;
+    color: #3d3d3d;
+}
+.ui-grid-pager-control .ui-grid-pager-max-pages-number {
+    vertical-align: middle;
+    font-size: 11.5px;
+}
+.dropup,
+.dropdown { float: left }
+.ui-grid-exporter-csv-link { display: none }

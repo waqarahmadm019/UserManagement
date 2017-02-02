@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -24,10 +25,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-//import com.usersmanagement.dao.DaoImplementation;
-//import com.usersmanagement.utils.GenBandUtil;
-
-
 /**
  *  UserManagementConfig : 
  *  Spring MVC enabled via @EnableWebMvc. 
@@ -42,6 +39,7 @@ import org.springframework.web.servlet.view.JstlView;
 	@EnableJpaRepositories
 	@ComponentScan({ "com.usersmanagement.*", "com.usersmanagement.controller", "com.usersmanagement.dao", "com.usersmanagement.service"})
 	@EnableTransactionManagement
+	@EnableAspectJAutoProxy
 	
 	public class UserManagementConfig extends WebMvcConfigurerAdapter{
 
@@ -147,16 +145,5 @@ import org.springframework.web.servlet.view.JstlView;
 	        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
 	    }
 		
-		//@Bean(name = "daoImplementation")
-//		public DaoImplementation getDaoImplementation() {
-//			
-//			return new DaoImplementation();
-//		}
-		
-		//@Bean(name = "genBandUtil")
-//		public GenBandUtil getGenBandUtil() {
-//			
-//			return new GenBandUtil();
-//		}
 		
 	}

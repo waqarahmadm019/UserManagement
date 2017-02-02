@@ -2,6 +2,7 @@ package com.usersmanagement.controller;
 
 import java.util.List;
 
+//import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,8 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	//static Logger logger = Logger.getLogger(UserController.class);
+
 	@RequestMapping(value= "/save", method = RequestMethod.POST)
     public String saveUser(UserEntity user) {
 		userService.save(user);
@@ -29,6 +32,14 @@ public class UserController {
 		userService.update(entity);
         return "hello world ";
     }
+	
+	@RequestMapping(value= "/hello", method = RequestMethod.GET)
+    public String users() {
+		//userService.update(entity);
+		//logger.info("logging information for hello");
+        return "hello world ";
+    }
+	
 	
 	@RequestMapping(value= "/delete", method = RequestMethod.DELETE)
     public String deleteUser(UserEntity entity) {

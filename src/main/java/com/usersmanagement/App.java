@@ -1,12 +1,10 @@
 package com.usersmanagement;
 
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
  
-//import com.usersmanagement.dao.DaoImplementation;
-//import com.usersmanagement.model.TableModel;
  
 /**
  * Standalone application with Spring Data JPA, Hibernate and Maven

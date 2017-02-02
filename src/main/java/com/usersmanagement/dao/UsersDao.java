@@ -1,13 +1,12 @@
 package com.usersmanagement.dao;
 
-//import javax.transaction.Transactional;
+
 
 import org.springframework.stereotype.Repository;
 
 import com.usersmanagement.model.UserEntity;
 
 @Repository
-//@Transactional
 public class UsersDao extends GenericDaoImplementation<UserEntity>{
 	
 	public UsersDao(){

@@ -1,0 +1,23 @@
+<div ng-controller="MainCtrl">
+    <button class="ui-grid-icon-search filter-btn" ng-click="searchField = !searchField"></button>
+    <input class="input-field" ng-model="filterValue" placeholder="Search..." ng-change="filter()" ng-show="searchField">
+<!--     <select ng-model="selectedColumn" ng-options="item.name for item in grid1_Options.columnDefs" ng-change="changeGrouping()" class="drop-down left-spacing"> -->
+<!--         <option value="">Group by</option> -->
+<!--     </select> -->
+    <button class="cols-btn" id="toggleFiltering" ng-click="toggleFiltering()">Columns Filter</button>
+    <div class="filter-options">
+        <button class="blue-btn" type="button" id="removeRows" ng-show="deleteRow == true" ng-click="removeRows()">Delete</button>
+        <!--<button class="export-btn" ng-click="export()">Export</button>-->
+        <!--<span class="ui-grid-exporter-csv-link">&nbsp</span>-->
+        <div class="dropdown">
+            <button class="export-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Export</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="javascript:void(0)" ng-click="export('csv')">CSV</a><span class="ui-grid-exporter-csv-link">&nbsp</span></li>
+                <li><a href="javascript:void(0)" ng-click="export('csv')">Excel</a></li>
+                <!--<li><a href="javascript:void(0)" ng-click="export('pdf')">PDF</a></li>-->
+            </ul>
+        </div>
+        <button class="sets-btn" ng-click="setFilter()">Settings Filter</button>
+    </div>
+    <div ui-grid="grid1_Options" ui-grid-move-columns ui-grid-resize-columns ui-grid-selection ui-grid-pagination ui-grid-draggable-rows ui-grid-exporter ui-grid-grouping class="grid" ></div>
+</div>
